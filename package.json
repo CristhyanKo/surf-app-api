@@ -8,18 +8,23 @@
 		"start": "yarn build && node dist/src/index.js",
 		"lint": "eslint ./src ./test --ext .ts",
 		"lint:fix": "eslint ./src ./test --ext .ts --fix",
-		"dev": "nodemon src/index.js",
-		"test": ""
+		"dev": "nodemon src/index.ts",
+		"test:functional": "jest --projects ./test --runInBand"
 	},
 	"author": "Cristhyan Kohlhase",
 	"license": "MIT",
 	"devDependencies": {
+		"@types/jest": "^27.0.1",
 		"@types/module-alias": "^2.0.1",
 		"@types/node": "^16.7.10",
+		"@types/supertest": "^2.0.11",
 		"@typescript-eslint/eslint-plugin": "^4.30.0",
 		"@typescript-eslint/parser": "^4.30.0",
 		"eslint": "^7.32.0",
+		"jest": "^27.1.0",
 		"nodemon": "^2.0.12",
+		"supertest": "^6.1.6",
+		"ts-jest": "^27.0.5",
 		"typescript": "^4.4.2"
 	},
 	"dependencies": {
